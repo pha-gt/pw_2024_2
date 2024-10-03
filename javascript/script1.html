@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Primer script</title>
+        <script>
+
+            function mensaje_saludo()
+            {
+                alert("Hola");
+            }
+            function saludo_turno(turno){
+                if(turno=="dia")
+                {
+                    alert("Buenos dias");
+                }
+                if(turno=="tarde")
+                {
+                    alert("Buenos tardes");
+                }
+                if(turno=="noche")
+                {
+                    alert("Buenas noches");
+                }
+
+            }
+
+            function saludar_nombre()
+            {
+                componente_nombre = document.getElementById('txtnombre');
+                alert("Hola "+componente_nombre.value);
+            }
+
+        </script>
+    </head>
+    <body>
+        <H1>Codigo Javascript</H1>
+
+        <button onclick="mensaje_saludo();"> Mi saludo</button>
+        <br>
+        <button onclick="saludo_turno('dia');"> Dia</button>
+        <button onclick="saludo_turno('tarde');"> Tarde</button>
+        <button onclick="saludo_turno('noche');"> Noche</button>
+        <br>
+        <br>
+        <input type="text" id="txtnombre">
+        <br>
+        <button onclick="saludar_nombre();" >saludar</button>
+
+
+    </body>
+
+
+
+</html>
