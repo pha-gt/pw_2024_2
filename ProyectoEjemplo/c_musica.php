@@ -4,7 +4,7 @@ include("./componentes/encabezado.php");
 <script>
     //Evento para realizar la carga de cancional al terminar de cargar
     window.addEventListener('load', function() {
-        obtener_musica();
+        //obtener_musica();
     });
 
     
@@ -252,6 +252,7 @@ function crearTabla(lista_musica){
 
 <h3>Melodias</h3>
 <button class='btn btn-sm btn-primary mx-2' onclick="solicitar_agregar();"> Agregar</button>
+<button class='btn btn-sm btn-primary mx-2' onclick="obtener_musica();"> Actualizar</button>
 
 <div id="div_tabla">
 </div>
